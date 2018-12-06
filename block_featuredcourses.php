@@ -24,7 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->libdir. '/coursecatlib.php');
 require_once($CFG->dirroot. '/course/renderer.php');
 
 class block_featuredcourses extends block_base {
