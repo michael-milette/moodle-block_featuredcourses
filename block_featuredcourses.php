@@ -81,7 +81,7 @@ class block_featuredcourses extends block_base {
                         $file->get_filearea(). $file->get_filepath(). $file->get_filename(), !$isimage);
                 if ($isimage) {
                     $contentimages .= html_writer::tag('div',
-                            html_writer::empty_tag('img', array('src' => $url, 'style' => 'max-height: 150px')),
+                            html_writer::empty_tag('img', array('src' => $url, 'style' => 'max-height: 150px', 'alt' => '')),
                             array('class' => 'courseimage'));
                 } else {
                     $image = $this->output->pix_icon(file_file_icon($file, 24), $file->get_filename(), 'moodle');
